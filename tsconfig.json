@@ -39,7 +39,8 @@
     "artifacts",
     "node_modules",
     "**/dist",
-    "playground"
+    "playground",
+    "testing/cypress"
   ],
   "include": [
     "js/renovation",

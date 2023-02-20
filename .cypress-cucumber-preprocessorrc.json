@@ -1,0 +1,6 @@
+{
+  "nonGlobalStepDefinitions": true,
+  "stepDefinitions": [
+    "testing/cypress/e2e/**/*.spec.ts"
+  ]
+}
