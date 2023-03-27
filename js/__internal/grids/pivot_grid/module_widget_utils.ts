@@ -59,7 +59,8 @@ function createForeachTreeFunc(isAsync) {
         foreachTreeAsyncDate = new Date();
         // @ts-expect-error
         deferred = new Deferred();
-        setTimeout(createForeachTreeAsyncHandler(deferred, i, false) as any, 0);
+        // eslint-disable-next-line @typescript-eslint/no-loop-func
+        setTimeout(() => createForeachTreeAsyncHandler(deferred, i, false) as any, 0);
 
         return deferred;
       }
